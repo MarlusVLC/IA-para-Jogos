@@ -1,4 +1,16 @@
 public class QuenchyThirst implements State {
+
+    //SINGLETON start
+    private static final QuenchyThirst INSTANCE = new QuenchyThirst();
+
+    private QuenchyThirst(){}
+
+    public static QuenchyThirst getInstance(){
+        return INSTANCE;
+    }
+    //SINGLETON end
+
+
     @Override
     public void enter(FarmerBob bob) {
 
@@ -10,7 +22,7 @@ public class QuenchyThirst implements State {
         bob.eraseThirsty();
 
         System.out.println("Gotta get back to work");
-        bob.changeStates(new EnterMineAndDigForNugget());
+        bob.changeStates(EnterMineAndDigForNugget.getInstance());
     }
 
     @Override

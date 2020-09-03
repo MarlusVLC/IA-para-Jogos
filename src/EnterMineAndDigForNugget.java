@@ -2,6 +2,15 @@ import java.util.Random;
 
 public class EnterMineAndDigForNugget implements  State{
 
+    //SINGLETON IMPLEMENTATION start
+    private static final EnterMineAndDigForNugget INSTANCE = new EnterMineAndDigForNugget();
+
+    private EnterMineAndDigForNugget(){}
+
+    public static EnterMineAndDigForNugget getInstance(){
+        return INSTANCE;
+    }
+    //SINGLETON IMPLEMENTATION end
 
     @Override
     public void enter(FarmerBob bob) {
@@ -30,11 +39,11 @@ public class EnterMineAndDigForNugget implements  State{
 
         //Verifica se atingiu alguma das condições p/ troca de estado:
         if(bob.pocketsFull()){
-            bob.changeStates(new VisitBankAndDepositGold());
+            bob.changeStates(VisitBankAndDepositGold.getInstance());
         }
 
         if(bob.isThirsty()){
-            bob.changeStates(new QuenchyThirst());
+            bob.changeStates(QuenchyThirst.getInstance());
         }
     }
 

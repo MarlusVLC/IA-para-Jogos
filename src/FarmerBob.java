@@ -13,7 +13,7 @@ public class FarmerBob {
         dailyGold = 0;
 
         //Instância de um objeto state para o estado inicial:
-        estadoAtual = new EnterMineAndDigForNugget();
+        estadoAtual = EnterMineAndDigForNugget.getInstance();
 
     }
 
