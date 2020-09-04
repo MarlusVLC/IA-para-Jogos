@@ -1,23 +1,26 @@
 public class QuenchyThirst implements State {
 
     //SINGLETON start
-    private static final QuenchyThirst INSTANCE = new QuenchyThirst();
+    private static QuenchyThirst INSTANCE = null;
 
     private QuenchyThirst(){}
 
     public static QuenchyThirst getInstance(){
+        if (INSTANCE == null){
+            INSTANCE = new QuenchyThirst();
+        }
         return INSTANCE;
     }
     //SINGLETON end
 
 
     @Override
-    public void enter(FarmerBob bob) {
+    public void enter(Farmer bob) {
 
     }
 
     @Override
-    public void execute(FarmerBob bob) {
+    public void execute(Farmer bob) {
         System.out.println("Hey, gimme somethin HARD to drink");
         bob.eraseThirsty();
 
@@ -26,7 +29,7 @@ public class QuenchyThirst implements State {
     }
 
     @Override
-    public void exit(FarmerBob bob) {
+    public void exit(Farmer bob) {
 
     }
 }

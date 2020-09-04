@@ -3,22 +3,29 @@ import java.util.Random;
 public class EnterMineAndDigForNugget implements  State{
 
     //SINGLETON IMPLEMENTATION start
-    private static final EnterMineAndDigForNugget INSTANCE = new EnterMineAndDigForNugget();
+    private static EnterMineAndDigForNugget INSTANCE = null;
 
     private EnterMineAndDigForNugget(){}
 
     public static EnterMineAndDigForNugget getInstance(){
+        if(INSTANCE == null){
+            INSTANCE = new EnterMineAndDigForNugget();
+        }
         return INSTANCE;
     }
     //SINGLETON IMPLEMENTATION end
 
-    @Override
-    public void enter(FarmerBob bob) {
 
+
+
+
+
+    @Override
+    public void enter(Farmer bob) {
     }
 
     @Override
-    public void execute(FarmerBob bob) {
+    public void execute(Farmer bob) {
         System.out.println("Working... Alot... Mining...");
 
         //faz um rand para verificiar se ele conseguiu ou não achar uma pepita de ouro
@@ -48,7 +55,7 @@ public class EnterMineAndDigForNugget implements  State{
     }
 
     @Override
-    public void exit(FarmerBob bob) {
+    public void exit(Farmer bob) {
 
     }
 }

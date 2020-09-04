@@ -1,22 +1,27 @@
 public class VisitBankAndDepositGold implements State {
 
     //SINGLETON start
-    private static final VisitBankAndDepositGold INSTANCE = new VisitBankAndDepositGold();
+    private static VisitBankAndDepositGold INSTANCE = new VisitBankAndDepositGold();
 
     private VisitBankAndDepositGold(){}
 
     public static VisitBankAndDepositGold getInstance(){
+        if (INSTANCE == null){
+            INSTANCE = new VisitBankAndDepositGold();
+        }
         return INSTANCE;
+
+
     }
     //SINGLETON end
 
     @Override
-    public void enter(FarmerBob bob) {
+    public void enter(Farmer bob) {
 
     }
 
     @Override
-    public void execute(FarmerBob bob) {
+    public void execute(Farmer bob) {
         System.out.println("Been lucky today! Gotta deposit the goods!");
         bob.depositAllGold();
         if (bob.hasEnoughForTheDay()){
@@ -32,7 +37,7 @@ public class VisitBankAndDepositGold implements State {
     }
 
     @Override
-    public void exit(FarmerBob bob) {
+    public void exit(Farmer bob) {
 
     }
 }

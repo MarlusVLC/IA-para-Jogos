@@ -2,22 +2,25 @@ public class GoHomeAndSleepTilRested implements State {
 
 
     //SINGLETON start
-    private static final GoHomeAndSleepTilRested INSTANCE = new GoHomeAndSleepTilRested();
+    private static GoHomeAndSleepTilRested INSTANCE = new GoHomeAndSleepTilRested();
 
     private GoHomeAndSleepTilRested(){}
 
     public static GoHomeAndSleepTilRested getInstance(){
+        if (INSTANCE == null){
+            INSTANCE = new GoHomeAndSleepTilRested();
+        }
         return INSTANCE;
     }
     //SINGLETON end
 
     @Override
-    public void enter(FarmerBob bob) {
+    public void enter(Farmer bob) {
 
     }
 
     @Override
-    public void execute(FarmerBob bob) {
+    public void execute(Farmer bob) {
         if (bob.isRested()){
             System.out.println("Aaargh. New day. New Money!");
             bob.changeStates( EnterMineAndDigForNugget.getInstance());
@@ -27,7 +30,7 @@ public class GoHomeAndSleepTilRested implements State {
     }
 
     @Override
-    public void exit(FarmerBob bob) {
+    public void exit(Farmer bob) {
 
     }
 }

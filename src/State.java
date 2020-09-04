@@ -1,8 +1,8 @@
 public interface State {
 
-    public void enter(FarmerBob bob);
+    public void enter(Farmer farmer);
 
-    public void execute (FarmerBob bob);
+    public void execute (Farmer farmer);
 
-    public void exit (FarmerBob bob);
+    public void exit (Farmer farmer);
 }

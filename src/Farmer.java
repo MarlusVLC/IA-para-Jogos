@@ -1,19 +1,23 @@
-public class FarmerBob {
+import java.util.Random;
+
+public class Farmer {
    private int nuggets, gold, fatigue, thirsty, dailyGold;
+   Random r;
 //    State state;
 
     private State estadoAtual;
 
-    public FarmerBob(){
+    public Farmer(State state){
 
         nuggets = 0;
         gold = 0;
         fatigue = 0;
         thirsty = 0;
         dailyGold = 0;
+        r = new Random();
 
         //Instância de um objeto state para o estado inicial:
-        estadoAtual = EnterMineAndDigForNugget.getInstance();
+        estadoAtual = state;
 
     }
 
@@ -29,9 +33,10 @@ public class FarmerBob {
     }
 
     public void ExecuteState(){
-        while (true){
-            estadoAtual.execute(this);
-        }
+//        while (true){
+//            estadoAtual.execute(this);
+//        }
+        estadoAtual.execute(this);
     }
 
     //Aumenta em 1 a quantidade de pepitas
@@ -41,11 +46,11 @@ public class FarmerBob {
 
 
     public void increaseFatigue(int n){
-        fatigue += n;
+        fatigue += Math.abs(n);
     }
 
     public void increaseThirsty(int n){
-        thirsty += n;
+        thirsty += Math.abs(n);
     }
 
     public void eraseThirsty(){ thirsty = 0; }
@@ -88,4 +93,22 @@ public class FarmerBob {
     public int getGold(){
         return gold;
     }
+
+
+
+    //BILLY
+    public boolean wantsToDoNothing(){
+        if (r.nextDouble() <= 0.25){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean wantsToWalk(){
+        if (r.nextDouble() <= 0.75){
+            return true;
+        }
+        return false;
+    }
 }
+
