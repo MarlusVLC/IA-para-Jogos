@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aeb1e466-a4d7-4396-9598-0c1616a2dd7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LookAtTheWeather.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/WalkAroundTheFarm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/EnterMineAndDigForNugget.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/EnterMineAndDigForNugget.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/FarmerBob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/GoHomeAndSleepTilRested.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/GoHomeAndSleepTilRested.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/QuenchyThirst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/QuenchyThirst.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/VisitBankAndDepositGold.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/VisitBankAndDepositGold.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EnterMineAndDigForNugget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EnterMineAndDigForNugget.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FarmerBob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Farmer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GoHomeAndSleepTilRested.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GoHomeAndSleepTilRested.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuenchyThirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuenchyThirst.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VisitBankAndDepositGold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VisitBankAndDepositGold.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
-    </list>
+    <list default="true" id="aeb1e466-a4d7-4396-9598-0c1616a2dd7d" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,10 +22,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Farmer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
+                <state relative-caret-position="250">
                   <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
                 </state>
               </provider>
@@ -58,10 +40,10 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/WalkAroundTheFarm.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="527">
+                <state relative-caret-position="510">
                   <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
                 </state>
               </provider>
@@ -168,11 +150,21 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MininBob-StatePattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MininBob-StatePattern" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599182894829" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599183619601" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../FarmerBobDemo - CodeSwap" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -229,10 +221,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="382" y="18" width="1485" height="1060" extended-state="0" />
-    <editor active="true" />
+    <frame x="440" y="26" width="1485" height="1060" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07298245" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.02736842" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -241,7 +232,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23922414" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23922414" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -315,13 +306,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WalkAroundTheFarm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/VisitBankAndDepositGold.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="488">
@@ -336,13 +320,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EnterMineAndDigForNugget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -352,8 +329,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Farmer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="250">
           <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EnterMineAndDigForNugget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/WalkAroundTheFarm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
         </state>
       </provider>
     </entry>
