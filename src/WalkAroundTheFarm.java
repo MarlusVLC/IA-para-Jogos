@@ -1,4 +1,4 @@
-public class WalkAroundTheFarm implements  State{
+public class WalkAroundTheFarm implements State <Billy> {
 
     //SINGLETON start
     private static WalkAroundTheFarm INSTANCE = null;
@@ -14,12 +14,12 @@ public class WalkAroundTheFarm implements  State{
     //SINGLETON end
 
     @Override
-    public void enter(Farmer farmer) {
+    public void enter(Billy farmer) {
 
     }
 
     @Override
-    public void execute(Farmer farmer) {
+    public void execute(Billy farmer) {
         System.out.println("Billy's walking through the farm... That's what he does");
 
         if (farmer.wantsToDoNothing()){
@@ -28,7 +28,7 @@ public class WalkAroundTheFarm implements  State{
     }
 
     @Override
-    public void exit(Farmer farmer) {
+    public void exit(Billy farmer) {
 
     }
 }

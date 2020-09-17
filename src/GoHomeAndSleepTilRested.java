@@ -1,4 +1,4 @@
-public class GoHomeAndSleepTilRested implements State {
+public class GoHomeAndSleepTilRested implements State <Bob> {
 
 
     //SINGLETON start
@@ -15,12 +15,12 @@ public class GoHomeAndSleepTilRested implements State {
     //SINGLETON end
 
     @Override
-    public void enter(Farmer bob) {
+    public void enter(Bob bob) {
 
     }
 
     @Override
-    public void execute(Farmer bob) {
+    public void execute(Bob bob) {
         if (bob.isRested()){
             System.out.println("Aaargh. New day. New Money!");
             bob.changeStates( EnterMineAndDigForNugget.getInstance());
@@ -30,7 +30,7 @@ public class GoHomeAndSleepTilRested implements State {
     }
 
     @Override
-    public void exit(Farmer bob) {
+    public void exit(Bob bob) {
 
     }
 }

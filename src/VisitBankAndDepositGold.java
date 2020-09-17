@@ -1,4 +1,4 @@
-public class VisitBankAndDepositGold implements State {
+public class VisitBankAndDepositGold implements State <Bob> {
 
     //SINGLETON start
     private static VisitBankAndDepositGold INSTANCE = new VisitBankAndDepositGold();
@@ -16,12 +16,12 @@ public class VisitBankAndDepositGold implements State {
     //SINGLETON end
 
     @Override
-    public void enter(Farmer bob) {
+    public void enter(Bob bob) {
 
     }
 
     @Override
-    public void execute(Farmer bob) {
+    public void execute(Bob bob) {
         System.out.println("Been lucky today! Gotta deposit the goods!");
         bob.depositAllGold();
         if (bob.hasEnoughForTheDay()){
@@ -37,7 +37,9 @@ public class VisitBankAndDepositGold implements State {
     }
 
     @Override
-    public void exit(Farmer bob) {
+    public void exit(Bob bob) {
 
     }
+
+
 }

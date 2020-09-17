@@ -1,4 +1,4 @@
-public class LookAtTheWeather implements State {
+public class LookAtTheWeather implements State <Billy> {
 
     //SINGLETON start
     private static LookAtTheWeather INSTANCE = null;
@@ -15,12 +15,12 @@ public class LookAtTheWeather implements State {
 
 
     @Override
-    public void enter(Farmer farmer) {
+    public void enter(Billy farmer) {
 
     }
 
     @Override
-    public void execute(Farmer farmer) {
+    public void execute(Billy farmer) {
         System.out.println("Billy said tomorrow's gonna rain. Yeah");
         if (farmer.wantsToWalk()){
             farmer.changeStates(WalkAroundTheFarm.getInstance());
@@ -28,7 +28,7 @@ public class LookAtTheWeather implements State {
     }
 
     @Override
-    public void exit(Farmer farmer) {
+    public void exit(Billy farmer) {
 
     }
 }

@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class EnterMineAndDigForNugget implements  State{
+public class EnterMineAndDigForNugget implements State <Bob>{
 
     //SINGLETON IMPLEMENTATION start
     private static EnterMineAndDigForNugget INSTANCE = null;
@@ -21,11 +21,11 @@ public class EnterMineAndDigForNugget implements  State{
 
 
     @Override
-    public void enter(Farmer bob) {
+    public void enter(Bob bob) {
     }
 
     @Override
-    public void execute(Farmer bob) {
+    public void execute(Bob bob) {
         System.out.println("Working... Alot... Mining...");
 
         //faz um rand para verificiar se ele conseguiu ou não achar uma pepita de ouro
@@ -55,7 +55,7 @@ public class EnterMineAndDigForNugget implements  State{
     }
 
     @Override
-    public void exit(Farmer bob) {
+    public void exit(Bob bob) {
 
     }
 }

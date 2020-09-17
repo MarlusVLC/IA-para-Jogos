@@ -1,4 +1,4 @@
-public class QuenchyThirst implements State {
+public class QuenchyThirst implements State <Bob> {
 
     //SINGLETON start
     private static QuenchyThirst INSTANCE = null;
@@ -15,12 +15,12 @@ public class QuenchyThirst implements State {
 
 
     @Override
-    public void enter(Farmer bob) {
+    public void enter(Bob bob) {
 
     }
 
     @Override
-    public void execute(Farmer bob) {
+    public void execute(Bob bob) {
         System.out.println("Hey, gimme somethin HARD to drink");
         bob.eraseThirsty();
 
@@ -29,7 +29,7 @@ public class QuenchyThirst implements State {
     }
 
     @Override
-    public void exit(Farmer bob) {
+    public void exit(Bob bob) {
 
     }
 }
