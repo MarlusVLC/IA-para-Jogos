@@ -15,20 +15,21 @@ public class LookAtTheWeather implements State <Billy> {
 
 
     @Override
-    public void enter(Billy farmer) {
+    public void enter(Billy billy) {
 
     }
 
     @Override
-    public void execute(Billy farmer) {
+    public void execute(Billy billy) {
         System.out.println("Billy said tomorrow's gonna rain. Yeah");
-        if (farmer.wantsToWalk()){
-            farmer.changeStates(WalkAroundTheFarm.getInstance());
+        if (billy.wantsToWalk()){
+            billy.getStateMachine().changeState(WalkAroundTheFarm.getInstance());
+
         }
     }
 
     @Override
-    public void exit(Billy farmer) {
+    public void exit(Billy billy) {
 
     }
 }

@@ -1,8 +1,8 @@
-public interface State <Farmer> {
+public interface State <NPC> {
 
-    public void enter(Farmer farmer);
+    public void enter(NPC farmer);
 
-    public void execute(Farmer farmer);
+    public void execute(NPC farmer);
 
-    public void exit(Farmer farmer);
+    public void exit(NPC farmer);
 }

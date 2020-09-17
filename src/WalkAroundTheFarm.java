@@ -14,21 +14,21 @@ public class WalkAroundTheFarm implements State <Billy> {
     //SINGLETON end
 
     @Override
-    public void enter(Billy farmer) {
+    public void enter(Billy billy) {
 
     }
 
     @Override
-    public void execute(Billy farmer) {
+    public void execute(Billy billy) {
         System.out.println("Billy's walking through the farm... That's what he does");
 
-        if (farmer.wantsToDoNothing()){
-            farmer.changeStates(LookAtTheWeather.getInstance());
+        if (billy.wantsToDoNothing()){
+            billy.getStateMachine().changeState(LookAtTheWeather.getInstance());
         }
     }
 
     @Override
-    public void exit(Billy farmer) {
+    public void exit(Billy billy) {
 
     }
 }

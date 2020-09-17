@@ -3,13 +3,25 @@ import java.util.Random;
 public class Billy extends Farmer {
 
 
-
+    private StateMachine stateMachine;
 
     public Billy() {
 
         r = new Random();
-        setEstadoAtual(LookAtTheWeather.getInstance());
 
+        //Instância a máquina de estados:
+        stateMachine = new StateMachine<Billy>(this);
+
+        //Seta o estado inicial:
+        stateMachine.setCurrentState(LookAtTheWeather.getInstance());
+
+        //Seta o estado global:
+        stateMachine.setGlobalState(BobGlobalState.getInstance());
+    }
+
+
+    public StateMachine<Billy> getStateMachine(){
+        return stateMachine;
     }
 
 

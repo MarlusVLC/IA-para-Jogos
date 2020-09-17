@@ -1,7 +1,7 @@
 public class VisitBankAndDepositGold implements State <Bob> {
 
     //SINGLETON start
-    private static VisitBankAndDepositGold INSTANCE = new VisitBankAndDepositGold();
+    private static VisitBankAndDepositGold INSTANCE = null;
 
     private VisitBankAndDepositGold(){}
 
@@ -28,11 +28,11 @@ public class VisitBankAndDepositGold implements State <Bob> {
             System.out.println("I've gathered " + bob.getGold() + " gold coins");
             System.out.print("Worked good. Gotta rest a bit");
             bob.resetDailyGold();
-            bob.changeStates(GoHomeAndSleepTilRested.getInstance());
+            bob.getStateMachine().changeState(GoHomeAndSleepTilRested.getInstance());
         }
         else{
             System.out.println("Need more. Gotta work harder!");
-            bob.changeStates(EnterMineAndDigForNugget.getInstance());
+            bob.getStateMachine().changeState(EnterMineAndDigForNugget.getInstance());
         }
     }
 

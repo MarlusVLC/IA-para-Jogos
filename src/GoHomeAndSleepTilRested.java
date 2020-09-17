@@ -23,7 +23,7 @@ public class GoHomeAndSleepTilRested implements State <Bob> {
     public void execute(Bob bob) {
         if (bob.isRested()){
             System.out.println("Aaargh. New day. New Money!");
-            bob.changeStates( EnterMineAndDigForNugget.getInstance());
+            bob.getStateMachine().changeState(EnterMineAndDigForNugget.getInstance());
         }
         bob.rest();
         System.out.println("ZZZzzzzZZZ... ZzZ!!");

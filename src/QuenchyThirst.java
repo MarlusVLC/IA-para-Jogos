@@ -16,7 +16,7 @@ public class QuenchyThirst implements State <Bob> {
 
     @Override
     public void enter(Bob bob) {
-
+        //bob.setLocation("Saloon");
     }
 
     @Override
@@ -25,7 +25,8 @@ public class QuenchyThirst implements State <Bob> {
         bob.eraseThirsty();
 
         System.out.println("Gotta get back to work");
-        bob.changeStates(EnterMineAndDigForNugget.getInstance());
+        //bob.changeStates(EnterMineAndDigForNugget.getInstance());
+        bob.getStateMachine().changeState(EnterMineAndDigForNugget.getInstance());
     }
 
     @Override

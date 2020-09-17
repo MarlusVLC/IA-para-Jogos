@@ -4,6 +4,8 @@ public class Bob extends Farmer {
 
     public int nuggets, gold, fatigue, thirsty, dailyGold;
 
+    private StateMachine stateMachine;
+
 
 
     public Bob() {
@@ -15,10 +17,22 @@ public class Bob extends Farmer {
         dailyGold = 0;
         r = new Random();
 
-        setEstadoAtual(EnterMineAndDigForNugget.getInstance());
-        //estadoAtual = LookAtTheWeather.getInstance(); //Vai dar um erro porque é inacessível pelo Bob, somente pelo Billy
+
+        //Instância a maquina de estados:
+        stateMachine = new StateMachine<Bob>(this);
+
+        //Seta o estado inicial:
+        stateMachine.setCurrentState(EnterMineAndDigForNugget.getInstance());
+
+        //Seta o estado global:
+        stateMachine.setGlobalState(BobGlobalState.getInstance());
+
     }
 
+
+    public StateMachine<Bob> getStateMachine(){
+        return stateMachine;
+    }
 
 
 

@@ -46,11 +46,11 @@ public class EnterMineAndDigForNugget implements State <Bob>{
 
         //Verifica se atingiu alguma das condições p/ troca de estado:
         if(bob.pocketsFull()){
-            bob.changeStates(VisitBankAndDepositGold.getInstance());
+            bob.getStateMachine().changeState(VisitBankAndDepositGold.getInstance());
         }
 
         if(bob.isThirsty()){
-            bob.changeStates(QuenchyThirst.getInstance());
+            bob.getStateMachine().changeState(QuenchyThirst.getInstance());
         }
     }
 
