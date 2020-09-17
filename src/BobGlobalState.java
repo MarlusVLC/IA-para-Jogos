@@ -16,7 +16,7 @@ public class BobGlobalState implements State <Bob> {
     //SINGLETON end
 
     @Override
-    public void enter(Bob  bob){
+    public void enter(Bob bob){
 
     }
 

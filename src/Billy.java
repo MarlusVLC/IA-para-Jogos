@@ -10,18 +10,18 @@ public class Billy extends Farmer {
         r = new Random();
 
         //Instância a máquina de estados:
-        stateMachine = new StateMachine<Billy>(this);
+        this.stateMachine = new StateMachine<Billy>(this);
 
         //Seta o estado inicial:
         stateMachine.setCurrentState(LookAtTheWeather.getInstance());
 
         //Seta o estado global:
-        stateMachine.setGlobalState(BobGlobalState.getInstance());
+        stateMachine.setGlobalState(BillyGlobalState.getInstance());
     }
 
 
     public StateMachine<Billy> getStateMachine(){
-        return stateMachine;
+        return this.stateMachine;
     }
 
 

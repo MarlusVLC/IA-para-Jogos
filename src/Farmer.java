@@ -8,8 +8,8 @@ public class Farmer {
    public Farmer() {
    }
 
-   public StateMachine getStateMachine(){
-      return stateMachine;
-   }
+//   public StateMachine getStateMachine(){
+//      return stateMachine;
+//   }
 }
 

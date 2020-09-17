@@ -19,7 +19,7 @@ public class Bob extends Farmer {
 
 
         //Instância a maquina de estados:
-        stateMachine = new StateMachine<Bob>(this);
+        this.stateMachine = new StateMachine<Bob>(this);
 
         //Seta o estado inicial:
         stateMachine.setCurrentState(EnterMineAndDigForNugget.getInstance());
@@ -31,7 +31,7 @@ public class Bob extends Farmer {
 
 
     public StateMachine<Bob> getStateMachine(){
-        return stateMachine;
+        return this.stateMachine;
     }
 
 
