@@ -2,12 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aeb1e466-a4d7-4396-9598-0c1616a2dd7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BillyGlobalState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Communication/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Communication/MessageDispatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entidades/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entidades/EntityManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entidades/Location.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/States/BillyStates/FakeWork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/States/BobStates/GoHomeAndSleepTilRested.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/States/State.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Billy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Billy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bob.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BobGlobalState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BobGlobalState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Farmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Farmer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/EnterMineAndDigForNugget.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/Farmer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/GoHomeAndSleepTilRested.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/LookAtTheWeather.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/QuenchyThirst.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/State.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/VisitBankAndDepositGold.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/WalkAroundTheFarm.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MininBob-StatePatternSilla/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Billy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entidades/Billy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BillyGlobalState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/BillyStates/BillyGlobalState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entidades/Bob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BobGlobalState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/BobStates/BobGlobalState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EnterMineAndDigForNugget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/BobStates/EnterMineAndDigForNugget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Farmer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GoHomeAndSleepTilRested.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LookAtTheWeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/BillyStates/LookAtTheWeather.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuenchyThirst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/BobStates/QuenchyThirst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/State.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StateMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/StateMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VisitBankAndDepositGold.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/BobStates/VisitBankAndDepositGold.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VisitBathroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/BobStates/VisitBathroom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WalkAroundTheFarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/States/BillyStates/WalkAroundTheFarm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,54 +45,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48008385">
+    <splitter split-orientation="horizontal" split-proportion="0.38901263">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/State.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Farmer.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Bob.java">
+            <entry file="file://$PROJECT_DIR$/src/Entidades/EntityManager.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="286">
-                  <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+                <state relative-caret-position="306">
+                  <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
                   <folding>
-                    <element signature="e#676#677#0" expanded="true" />
-                    <element signature="e#711#712#0" expanded="true" />
+                    <element signature="e#853#854#0" expanded="true" />
+                    <element signature="e#878#879#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/BobGlobalState.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/VisitBathroom.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
                 </state>
               </provider>
             </entry>
@@ -73,120 +64,20 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="vertical" split-proportion="0.7756874">
-          <split-first>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/EnterMineAndDigForNugget.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-374">
-                      <caret line="2" column="58" lean-forward="true" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/StateMachine.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="476">
-                      <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-                      <folding>
-                        <element signature="e#1360#1361#0" expanded="true" />
-                        <element signature="e#1389#1390#0" expanded="true" />
-                        <element signature="e#1480#1481#0" expanded="true" />
-                        <element signature="e#1574#1575#0" expanded="true" />
-                        <element signature="e#1654#1655#0" expanded="true" />
-                        <element signature="e#1750#1751#0" expanded="true" />
-                        <element signature="e#1826#1827#0" expanded="true" />
-                        <element signature="e#1918#1919#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/VisitBankAndDepositGold.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="47">
-                      <caret line="30" column="81" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/main.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="221">
-                      <caret line="13" selection-start-line="13" selection-end-line="14" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/QuenchyThirst.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="14">
-                      <caret line="15" selection-start-line="15" selection-end-line="15" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/GoHomeAndSleepTilRested.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="561">
-                      <caret line="33" selection-start-line="33" selection-end-line="33" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-first>
-          <split-second>
-            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/LookAtTheWeather.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="85">
-                      <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/Billy.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="180">
-                      <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-                      <folding>
-                        <element signature="e#273#274#0" expanded="true" />
-                        <element signature="e#308#309#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/src/WalkAroundTheFarm.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="272">
-                      <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/src/BillyGlobalState.java">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="38">
-                      <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-            </leaf>
-          </split-second>
-        </splitter>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="391">
+                  <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
       </split-second>
     </splitter>
   </component>
@@ -194,13 +85,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Singleton" />
+        <option value="package-info" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>FarmerBob</find>
+      <find>jobsdone</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -212,29 +107,51 @@
         <option value="$PROJECT_DIR$/src/FarmerBob.java" />
         <option value="$PROJECT_DIR$/src/StateBob.java" />
         <option value="$PROJECT_DIR$/src/StateBilly.java" />
-        <option value="$PROJECT_DIR$/src/State.java" />
-        <option value="$PROJECT_DIR$/src/StateMachine.java" />
-        <option value="$PROJECT_DIR$/src/QuenchyThirst.java" />
-        <option value="$PROJECT_DIR$/src/VisitBankAndDepositGold.java" />
-        <option value="$PROJECT_DIR$/src/EnterMineAndDigForNugget.java" />
-        <option value="$PROJECT_DIR$/src/GoHomeAndSleepTilRested.java" />
-        <option value="$PROJECT_DIR$/src/WalkAroundTheFarm.java" />
-        <option value="$PROJECT_DIR$/src/LookAtTheWeather.java" />
-        <option value="$PROJECT_DIR$/src/VisitBathroom.java" />
-        <option value="$PROJECT_DIR$/src/BillyGlobalState.java" />
+        <option value="$PROJECT_DIR$/src/Entity_.java" />
         <option value="$PROJECT_DIR$/src/Farmer.java" />
+        <option value="$PROJECT_DIR$/src/EntityManager.java" />
+        <option value="$PROJECT_DIR$/src/Message.java" />
+        <option value="$PROJECT_DIR$/src/StateMachine.java" />
+        <option value="$PROJECT_DIR$/src/BillyGlobalState.java" />
+        <option value="$PROJECT_DIR$/src/GoHomeAndSleepTilRested.java" />
+        <option value="$PROJECT_DIR$/src/QuenchyThirst.java" />
+        <option value="$PROJECT_DIR$/src/State.java" />
+        <option value="$PROJECT_DIR$/src/WalkAroundTheFarm.java" />
+        <option value="$PROJECT_DIR$/src/VisitBankAndDepositGold.java" />
+        <option value="$PROJECT_DIR$/src/VisitBathroom.java" />
+        <option value="$PROJECT_DIR$/src/MessageDispatcher.java" />
+        <option value="$PROJECT_DIR$/src/FakeWork.java" />
         <option value="$PROJECT_DIR$/src/BobGlobalState.java" />
-        <option value="$PROJECT_DIR$/src/Bob.java" />
+        <option value="$PROJECT_DIR$/src/LookAtTheWeather.java" />
+        <option value="$PROJECT_DIR$/src/Entity.java" />
         <option value="$PROJECT_DIR$/src/Billy.java" />
+        <option value="$PROJECT_DIR$/src/Bob.java" />
+        <option value="$PROJECT_DIR$/src/EnterMineAndDigForNugget.java" />
+        <option value="$PROJECT_DIR$/src/States/StateMachine.java" />
+        <option value="$PROJECT_DIR$/src/States/State.java" />
+        <option value="$PROJECT_DIR$/src/States/BillyStates/BillyGlobalState.java" />
+        <option value="$PROJECT_DIR$/src/States/BobStates/BobGlobalState.java" />
+        <option value="$PROJECT_DIR$/src/Entidades/Billy.java" />
+        <option value="$PROJECT_DIR$/src/Entidades/Location.java" />
+        <option value="$PROJECT_DIR$/src/Entidades/Entity.java" />
+        <option value="$PROJECT_DIR$/src/Entidades/Bob.java" />
+        <option value="$PROJECT_DIR$/src/States/BobStates/EnterMineAndDigForNugget.java" />
+        <option value="$PROJECT_DIR$/src/States/BobStates/GoHomeAndSleepTilRested.java" />
+        <option value="$PROJECT_DIR$/src/States/BobStates/QuenchyThirst.java" />
+        <option value="$PROJECT_DIR$/src/States/BobStates/VisitBankAndDepositGold.java" />
+        <option value="$PROJECT_DIR$/src/States/BobStates/VisitBathroom.java" />
+        <option value="$PROJECT_DIR$/src/States/BillyStates/FakeWork.java" />
+        <option value="$PROJECT_DIR$/src/States/BillyStates/LookAtTheWeather.java" />
+        <option value="$PROJECT_DIR$/src/States/BillyStates/WalkAroundTheFarm.java" />
+        <option value="$PROJECT_DIR$/src/Entidades/EntityManager.java" />
         <option value="$PROJECT_DIR$/src/main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="398" />
-    <option name="y" value="3" />
+    <option name="x" value="353" />
     <option name="width" value="1521" />
-    <option name="height" value="1053" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -256,7 +173,35 @@
             <path>
               <item name="MininBob-StatePattern" type="b2602c69:ProjectViewProjectNode" />
               <item name="MininBob-StatePattern" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MininBob-StatePattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MininBob-StatePattern" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MininBob-StatePattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MininBob-StatePattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Entidades" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MininBob-StatePattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MininBob-StatePattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="States" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MininBob-StatePattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MininBob-StatePattern" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="States" type="462c0819:PsiDirectoryNode" />
+              <item name="BillyStates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MininBob-StatePattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -265,8 +210,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600374723142" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Westworld - Tambosi" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600992520488" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -332,14 +277,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600372765206</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Billy corrigido. Funfando tranquilo. Implementacao de um contador no main pra deixar mais &quot;palatável&quot;">
+      <created>1600374791554</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600374791554</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="398" y="3" width="1521" height="1053" extended-state="0" />
+    <frame x="353" y="0" width="1521" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.02053388" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.078028746" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -347,8 +299,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3297414" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24972856" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.25632912" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24367088" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -401,143 +353,203 @@
     <MESSAGE value="implement Singleton pattern in states" />
     <MESSAGE value="Aumento de independência de classes e implementação de Generics" />
     <MESSAGE value="Implementação de uma classe gerenciadora de estados: FSM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementação de uma classe gerenciadora de estados: FSM" />
+    <MESSAGE value="Billy corrigido. Funfando tranquilo. Implementacao de um contador no main pra deixar mais &quot;palatável&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Billy corrigido. Funfando tranquilo. Implementacao de um contador no main pra deixar mais &quot;palatável&quot;" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/StateBilly.java">
+    <entry file="file://$PROJECT_DIR$/src/StateBilly.java" />
+    <entry file="file://$PROJECT_DIR$/src/delthis.java" />
+    <entry file="file://$PROJECT_DIR$/src/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/src/Communication/Message.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" />
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Communication/MessageDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/StateMachine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74">
+          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
           <folding>
-            <element signature="e#0#160#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/GoHomeAndSleepTilRested.java">
+    <entry file="file://$PROJECT_DIR$/src/States/BillyStates/BillyGlobalState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/QuenchyThirst.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/LookAtTheWeather.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VisitBathroom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/VisitBankAndDepositGold.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="30" column="81" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EnterMineAndDigForNugget.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="2" column="58" lean-forward="true" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Farmer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BobGlobalState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Bob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+        <state relative-caret-position="527">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
-            <element signature="e#676#677#0" expanded="true" />
-            <element signature="e#711#712#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WalkAroundTheFarm.java">
+    <entry file="file://$PROJECT_DIR$/src/Entidades/Location.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="38" lean-forward="true" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Billy.java">
+    <entry file="file://$PROJECT_DIR$/src/Entidades/Billy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+        <state relative-caret-position="492">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
           <folding>
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#993#994#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BillyGlobalState.java">
+    <entry file="file://$PROJECT_DIR$/src/Entidades/Bob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="679">
+          <caret line="107" column="5" selection-start-line="107" selection-start-column="5" selection-end-line="107" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StateMachine.java">
+    <entry file="file://$PROJECT_DIR$/src/States/BobStates/BobGlobalState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+        <state relative-caret-position="237">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
-            <element signature="e#1360#1361#0" expanded="true" />
-            <element signature="e#1389#1390#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
-            <element signature="e#1574#1575#0" expanded="true" />
-            <element signature="e#1654#1655#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
-            <element signature="e#1826#1827#0" expanded="true" />
-            <element signature="e#1918#1919#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/BobStates/QuenchyThirst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/BobStates/VisitBankAndDepositGold.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="41" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entidades/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/BobStates/VisitBathroom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/BobStates/EnterMineAndDigForNugget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" selection-start-line="31" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1835#1836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/BillyStates/FakeWork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="28" selection-start-line="28" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/BillyStates/LookAtTheWeather.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/BillyStates/WalkAroundTheFarm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/States/BobStates/GoHomeAndSleepTilRested.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" selection-start-line="28" selection-end-line="30" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entidades/EntityManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="24" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="14" />
+        <state relative-caret-position="391">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

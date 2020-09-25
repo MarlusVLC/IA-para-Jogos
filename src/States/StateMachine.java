@@ -1,3 +1,8 @@
+package States;
+
+import Communication.Message;
+import States.State;
+
 public class StateMachine <NPC> {
     //Define quem é o dono deste objeto:
     private NPC myOwner;
@@ -58,7 +63,21 @@ public class StateMachine <NPC> {
     }
 
 
+    public boolean handleMessage(Message msg) {
+        //Verifica se o estado atual é capaz de lidar com a mensagem recebida:
+        if (currentState.onMessage(myOwner, msg)){
+            return true;
+        }
 
+        //Se o estado atual não sabe lidar com a mensagem, verificamos
+        //se existe um estado global e ele sabe lidar com a mensagem:
+        if (globalState != null && globalState.onMessage(myOwner, msg)){
+            return true;
+        }
+
+        //Do contrário, retorne falso:
+        return false;
+    }
 
 
 
@@ -88,4 +107,6 @@ public class StateMachine <NPC> {
     public void setGlobalState(State<NPC> State) {
         this.globalState = State;
     }
+
+
 }

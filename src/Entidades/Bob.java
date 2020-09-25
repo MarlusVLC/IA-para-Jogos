@@ -1,21 +1,27 @@
+package Entidades;
+
+import States.BobStates.*;
+import States.StateMachine;
+
 import java.util.Random;
 
-public class Bob extends Farmer {
+public class Bob extends Entity {
 
     public int nuggets, gold, fatigue, thirsty, dailyGold;
-
-    private StateMachine stateMachine;
+    boolean BillyWorked;
+    String location;
 
 
 
     public Bob() {
-
+        super("Bob");
         nuggets = 0;
         gold = 0;
         fatigue = 0;
         thirsty = 0;
         dailyGold = 0;
         r = new Random();
+        location = "Mine";
 
 
         //Instância a maquina de estados:
@@ -93,4 +99,20 @@ public class Bob extends Farmer {
     }
 
 
+
+
+
+    @Override
+    public void update() {
+        stateMachine.update();
+    }
+
+
+    public boolean billyWorked(){
+        return BillyWorked;
+    }
+
+    public void setBillyWorked(boolean hasit){
+        BillyWorked = hasit;
+    }
 }

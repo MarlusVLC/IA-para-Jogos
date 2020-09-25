@@ -1,6 +1,13 @@
+package States.BobStates;
+
+import Communication.Message;
+import Entidades.Bob;
+import Entidades.Location;
+import States.State;
+
 import java.util.Random;
 
-public class EnterMineAndDigForNugget implements State <Bob>{
+public class EnterMineAndDigForNugget implements State<Bob> {
 
     //SINGLETON IMPLEMENTATION start
     private static EnterMineAndDigForNugget INSTANCE = null;
@@ -22,6 +29,9 @@ public class EnterMineAndDigForNugget implements State <Bob>{
 
     @Override
     public void enter(Bob bob) {
+        if (bob.getLocation() != Location.MINE){
+            bob.setLocation(Location.MINE);
+        }
     }
 
     @Override
@@ -57,5 +67,10 @@ public class EnterMineAndDigForNugget implements State <Bob>{
     @Override
     public void exit(Bob bob) {
 
+    }
+
+    @Override
+    public boolean onMessage(Bob bob, Message msg) {
+        return false;
     }
 }

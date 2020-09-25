@@ -1,4 +1,11 @@
-public class LookAtTheWeather implements State <Billy> {
+package States.BillyStates;
+
+import Communication.Message;
+import Entidades.Billy;
+import Entidades.Location;
+import States.State;
+
+public class LookAtTheWeather implements State<Billy> {
 
     //SINGLETON start
     private static LookAtTheWeather INSTANCE = null;
@@ -16,7 +23,9 @@ public class LookAtTheWeather implements State <Billy> {
 
     @Override
     public void enter(Billy billy) {
-
+        if (billy.getLocation() != Location.FARM){
+            billy.setLocation(Location.FARM);
+        }
     }
 
     @Override
@@ -31,5 +40,10 @@ public class LookAtTheWeather implements State <Billy> {
     @Override
     public void exit(Billy billy) {
 
+    }
+
+    @Override
+    public boolean onMessage(Billy billy, Message msg) {
+        return false;
     }
 }

@@ -1,4 +1,11 @@
-public class VisitBankAndDepositGold implements State <Bob> {
+package States.BobStates;
+
+import Communication.Message;
+import Entidades.Bob;
+import Entidades.Location;
+import States.State;
+
+public class VisitBankAndDepositGold implements State<Bob> {
 
     //SINGLETON start
     private static VisitBankAndDepositGold INSTANCE = null;
@@ -17,7 +24,9 @@ public class VisitBankAndDepositGold implements State <Bob> {
 
     @Override
     public void enter(Bob bob) {
-
+        if (bob.getLocation() != Location.BANK){
+            bob.setLocation(Location.BANK);
+        }
     }
 
     @Override
@@ -39,6 +48,11 @@ public class VisitBankAndDepositGold implements State <Bob> {
     @Override
     public void exit(Bob bob) {
 
+    }
+
+    @Override
+    public boolean onMessage(Bob bob, Message msg) {
+        return false;
     }
 
 

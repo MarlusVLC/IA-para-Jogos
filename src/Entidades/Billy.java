@@ -1,12 +1,20 @@
+package Entidades;
+import States.BillyStates.*;
+import States.StateMachine;
+
 import java.util.Random;
 
-public class Billy extends Farmer {
+public class Billy extends Entity {
+
+    String location;
 
 
-    private StateMachine stateMachine;
+
+
 
     public Billy() {
-
+        super("Billy");
+        location = "Farm";
         r = new Random();
 
         //Instância a máquina de estados:
@@ -43,4 +51,8 @@ public class Billy extends Farmer {
     }
 
 
+    @Override
+    public void update() {
+        stateMachine.update();
+    }
 }

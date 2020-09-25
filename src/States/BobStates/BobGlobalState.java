@@ -1,6 +1,12 @@
+package States.BobStates;
+
+import Communication.Message;
+import Entidades.Bob;
+import States.State;
+
 import java.util.Random;
 
-public class BobGlobalState implements State <Bob> {
+public class BobGlobalState implements State<Bob> {
 
     //begin SINGLETON
     private static BobGlobalState INSTANCE = null;
@@ -20,6 +26,8 @@ public class BobGlobalState implements State <Bob> {
 
     }
 
+
+    @Override
     public void execute(Bob bob){
         Random r = new Random();
         int rand = r.nextInt(100);
@@ -28,8 +36,24 @@ public class BobGlobalState implements State <Bob> {
         }
     }
 
+
+
+    @Override
     public void exit(Bob bob){
 
+    }
+
+
+
+    @Override
+    public boolean onMessage(Bob bob, Message msg) {
+        if (msg.getMessage().compareToIgnoreCase("JobsDone!")==0){
+            bob.setBillyWorked(true);
+            System.out.println("DutyDone");
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }
